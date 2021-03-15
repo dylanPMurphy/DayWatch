@@ -63,7 +63,7 @@ struct ContentView: View {
                 .font(.title)
                 .multilineTextAlignment(.center)
                 .padding(.leading, 5.0)
-            Text("An app to keep your day come full circle")
+            Text("Have your day come full circle")
                 .font(.subheadline)
                 .multilineTextAlignment(.center)
                 .padding(.leading, 5.0)
