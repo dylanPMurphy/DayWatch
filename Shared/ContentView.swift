@@ -13,11 +13,52 @@ struct ContentView: View {
         
                 
         VStack(alignment: .leading){
-            Rectangle()
+            
+            ZStack{
+                Rectangle()
+                    .fill(Color.black)
+                    .frame(height: 300.0)
+                    .cornerRadius(/*@START_MENU_TOKEN@*/13.0/*@END_MENU_TOKEN@*/)
+                Circle()
+                    .fill(Color.white)
+                    .frame(height:275.0)
+                ZStack{
+                    Rectangle()
+                        .frame(width:10.0, height:278.0 )
+                    Rectangle()
+                        .frame(width:10.0, height:278.0 )
+                        .rotationEffect(.degrees(30))
+                    Rectangle()
+                        .frame(width:10.0, height:278.0 )
+                        .rotationEffect(.degrees(-30))
+                    Rectangle()
+                        .frame(width:10.0, height:278.0 )
+                        .rotationEffect(.degrees(60))
+                    Rectangle()
+                        .frame(width:10.0, height:278.0 )
+                        .rotationEffect(.degrees(-60))
+                    Rectangle()
+                        .frame(width:10.0, height:278.0 )
+                        .rotationEffect(.degrees(120))
+                    Rectangle()
+                        .frame(width:10.0, height:278.0 )
+                        .rotationEffect(.degrees(-120))
+                    Rectangle()
+                        .frame(width:10.0, height:278.0 )
+                        .rotationEffect(.degrees(90))
+                }
+                Circle()
+                    .fill(Color.white)
+                    .frame(height:240.0)
+                Rectangle()
+                    .fill(Color.red)
+                    .frame(width:6.0, height:278.0 )
+                    .rotationEffect(.degrees(0))
+                    
                 
-                .fill(Color.black)
-                .frame(height: 300.0)
-                
+            }
+            
+            
             Text("DayWatch")
                 .font(.title)
                 .multilineTextAlignment(.center)
